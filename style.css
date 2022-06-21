@@ -1,0 +1,213 @@
+/*****page setting*****/
+
+/*****Font choice*****/
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+}
+/*****Project colors*****/
+:root {
+  --Paleblue: hsl(225, 100%, 94%); /*Paleblue:*/
+  --Brightblue: hsl(245, 75%, 52%); /*Brightblue*/
+  --Verypaleblue: hsl(225, 100%, 98%); /*Verypaleblue*/
+  --Desaturatedblue: hsl(224, 23%, 55%); /*Desaturatedblue*/
+  --Darkblue: hsl(223, 47%, 23%); /*Darkblue*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+/*****Body and background setting*****/
+
+body {
+  min-height: 100vh;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-color: var(--Paleblue);
+  font-size: 16px;
+}
+
+/*****Flexbox for center elements on the page*****/
+
+Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/*****Grid with 2 lignes, picture at 100% of ligne 1 for help with mobile page*****/
+
+.grid1 {
+  display: grid;
+  grid-template-rows: 31.43% 68.57%;
+  background: var(--Verypaleblue);
+  box-shadow: 0px 20px 30px 0px hsla(225, 55%, 55%, 0.2);
+  border-radius: 18px;
+  width: 450px;
+  height: 700px;
+  margin: auto;
+}
+/*****Ligne 1 : Container-up IMG*****/
+
+.container-up {
+  background: url(./images/illustration-hero.svg) center/cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px 18px 0 0;
+}
+/*****Ligne 2 : Container-down*****/
+
+.container-down {
+  display: block;
+}
+
+.text h1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--Darkblue);
+  text-align: center;
+  margin-top: 10%;
+}
+
+.text p {
+  font-weight: 500;
+  text-align: center;
+  color: var(--Desaturatedblue);
+  line-height: 25px;
+  margin: 5% 10%;
+}
+
+/*****Grid 3 columns*****/
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  align-items: center;
+  background: hsla(227, 47%, 90%, 0.25);
+  border-radius: 10px;
+  width: 80%;
+  height: 95px;
+  margin: 0 10% 8% 10%;
+}
+
+.img {
+  background: url(./images/icon-music.svg) center/cover;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+}
+
+.payement-plan h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--Darkblue);
+}
+
+.payement-plan p {
+  font-weight: 500;
+  color: var(--Desaturatedblue);
+}
+
+.change {
+  font-size: 0.85rem;
+  color: var(--Brightblue);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.change:hover {
+  color: hsl(245, 75%, 52%, 0.5);
+}
+
+/*****button*****/
+button {
+  background: var(--Brightblue);
+  color: var(--Verypaleblue);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 50px;
+  display: inline-block;
+  transition: 0.4s ease;
+  cursor: pointer;
+  margin: 0 10% 7% 10%;
+  box-shadow: 0px 20px 30px 0px hsla(245, 75%, 52%, 0.2);
+  font-weight: 900;
+  font-size: 0.88rem;
+}
+
+.button:hover {
+  background: hsl(245, 75%, 52%, 0.68);
+}
+
+.cancel {
+  text-align: center;
+}
+
+.cancel a {
+  font-size: 0.9rem;
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.cancel a:hover {
+  color: var(--Desaturatedblue);
+}
+
+/*****align footer*****/
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 470px) {
+  /*****smaller card*****/
+  .grid1 {
+    width: 327px;
+    height: 570px;
+  }
+  /*****smaller font****/
+  .text h1 {
+    font-size: 1.3rem;
+  }
+  /*****smaller font, diff line-height and margin****/
+  .text p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin: 16px 40px 25px 40px;
+  }
+  /***** diff grid, size and margin****/
+  .grid2 {
+    height: 75px;
+    grid-template-columns: 30% 45% 25%;
+    width: 85%;
+    margin: 0 7.5% 8% 7.5%;
+  }
+  /*****smaller font****/
+  .payement-plan h2 {
+    font-size: 0.85rem;
+  }
+  /*****smaller font****/
+  .payement-plan p {
+    font-size: 0.85rem;
+  }
+  /*****smaller font****/
+  .change {
+    font-size: 0.76rem;
+  }
+  /***** diff size and margin****/
+  button {
+    width: 85%;
+    margin: 0 7.5% 7% 7.5%;
+  }
+}
