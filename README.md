@@ -34,15 +34,17 @@ For mobile :
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://stv-devl.github.io/Order-summary-component/)
 
 ## My process
 
-I try to center the object using a Grid at the <Section class="container">, last time I did the same with flexbox but it's working well with Grid.
-I use a grid with 2 lignes for separate the image and the texte
-I use a grid with 3 columns for separate element of the payement card
-I use margin for adjusting the texts.
+I used a Grid for center the card. Last time I did the same with flexbox but it's working well with Grid.
+
+I used a grid with 2 lignes for separate the image and the texte.
+
+I used a grid with 3 columns for separate element of the payement card.
+
+I used margin for adjusting the texts.
 
 ### Built with
 
@@ -53,9 +55,9 @@ I use margin for adjusting the texts.
 
 ### What I learned
 
-I practice about using grid for center and positioning the object. The idea was to use les margin. But still have a lot anyway.
+I practice about using Grid to center and positioning objects. Idea was to use less margin.
 
-Exemple=> Grid for help with the size of image. The image will automatically be smaller when we reduce screen for mobile :
+Exemple=> Grid to help to sizing the image.
 
 ```css =>
 .grid1 {
@@ -72,7 +74,7 @@ Exemple=> Grid for help with the size of image. The image will automatically be 
 
 ### Continued development
 
-I think this kind of work can be done with less code and easier... I just have to find how.
+I think this kind of work can be done with less codes and easier... I just have to find how.
 
 ## Author
 
